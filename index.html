@@ -1,45 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 40px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #fafafa;
-      color: #333;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      text-align: center;
-    }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 18px;
-      opacity: 0.8;
-    }
-    .footer {
-      margin-top: 60px;
-      font-size: 14px;
-      opacity: 0.5;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>환영합니다 👋</h1>
-    <p>이 페이지는 간단한 도메인 연결 테스트용 페이지입니다.</p>
-    <p>구글 워크스페이스 + 깃허브 호스팅 연동 확인용으로 사용하고 있어요.</p>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page</title>
 
-    <div class="footer">© 2025. All rights reserved.</div>
-  </div>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page-home">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Page</a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="pages/slog/">Slog</a>
+        <a class="nav-link" href="pages/about.html">About</a>
+        <a class="nav-link" href="pages/archive.html">Archive</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>정적 블로그</h1>
+      <p>스크롤해도 따라오는 헤더 + 여러 페이지 링크 구조.</p>
+    </section>
+
+    <section class="card">
+      <h2>바로가기</h2>
+      <ul class="page-list">
+        <li><a href="pages/slog/">Slog — 짧은 로그/글</a></li>
+        <li><a href="pages/archive.html">Archive — 모아보기</a></li>
+        <li><a href="pages/about.html">About — 소개</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>샘플</h2>
+      <p>아래는 스크롤 테스트용 여백.</p>
+      <div style="height: 1100px;"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Page</small>
+    </div>
+  </footer>
 </body>
 </html>
